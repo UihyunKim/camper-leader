@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+
+$heading-font: 'Roboto', sans-serif;
+$main-font: 'Raleway', sans-serif;
+
+$black: #26292D;
+$steel-grey: #3B3F47;
+$grey: #474E57;
+$ivory: #FAFAF9;
+$shady-lady: #A4A2A3;
+$buddha-gold: #C79F24;
+$squirrel: #98826E;
+$light-grey: #D1D1D1;
+
+* {
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+html {
+    background-color: $black;
+}
+
+#root {
+
+    padding: 50px 0;
+
+    h1 {
+        text-align: center;
+        color: $ivory;
+        margin: 15px 0 20px;
+        font-family: $heading-font;
+    }
+
+    .App {
+        margin: 0 auto;
+        width: 500px;
+        background-color: $steel-grey;
+        border-radius: 15px;
+        padding: 15px 10px;
+
+        .header {
+
+            .row {
+                display: flex;
+                justify-content: flex-end;
+
+                .cell {
+                    color: $ivory;
+                    margin: 0 10px;
+
+                    span {
+                        padding: 2px 0;
+                        display: block;
+                    }
+                }
+
+                .btn-container {
+                    flex-basis: 75px;
+                    text-align: center;
+                    background-color: $shady-lady;
+                    color: black;
+                    border-radius: 8px;
+                }
+
+                .btn-container.active {
+                    background-color: $ivory;
+                }
+            };
+        }
+
+        .board {
+            .user {
+                display: flex;
+                align-items: center;
+                background-color: $grey;
+                padding: 10px 0;
+                margin: 20px 0;
+                border-radius: 4px;
+
+                div {
+                    color: $ivory;
+                }
+
+                .rank {
+                    flex: 0 0 10%;
+                    text-align: center;
+                }
+
+                .avatar-container {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 0 20%;
+
+                    img {
+                    max-width: 70px;
+                    border-radius: 50%;
+                    }
+                }
+
+                .name {
+                    flex: 0 0 auto;
+                    margin-right: auto;
+                }
+
+                .recent {
+                    flex: 0 0 75px;
+                    margin: 0 10px;
+                    text-align: center;
+                }
+
+                .alltime {
+                    flex: 0 0 75px;
+                    margin: 0 10px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

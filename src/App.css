@@ -1,28 +1,102 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  background-color: #26292D;
+}
+
+#root {
+  padding: 50px 0;
+}
+
+#root h1 {
+  text-align: center;
+  color: #FAFAF9;
+  margin: 15px 0 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#root .App {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #3B3F47;
+  border-radius: 15px;
+  padding: 15px 10px;
+}
+
+#root .App .header .row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#root .App .header .row .cell {
+  color: #FAFAF9;
+  margin: 0 10px;
+}
+
+#root .App .header .row .cell span {
+  padding: 2px 0;
+  display: block;
+}
+
+#root .App .header .row .btn-container {
+  flex-basis: 75px;
+  text-align: center;
+  background-color: #A4A2A3;
+  color: black;
+  border-radius: 8px;
+}
+
+#root .App .header .row .btn-container.active {
+  background-color: #FAFAF9;
+}
+
+#root .App .board .user {
+  display: flex;
+  align-items: center;
+  background-color: #474E57;
+  padding: 10px 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+#root .App .board .user div {
+  color: #FAFAF9;
+}
+
+#root .App .board .user .rank {
+  flex: 0 0 10%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#root .App .board .user .avatar-container {
+  display: flex;
+  align-items: center;
+  flex: 0 0 20%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#root .App .board .user .avatar-container img {
+  max-width: 70px;
+  border-radius: 50%;
 }
 
-.App-title {
-  font-size: 1.5em;
+#root .App .board .user .name {
+  flex: 0 0 auto;
+  margin-right: auto;
 }
 
-.App-intro {
-  font-size: large;
+#root .App .board .user .recent {
+  flex: 0 0 75px;
+  margin: 0 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#root .App .board .user .alltime {
+  flex: 0 0 75px;
+  margin: 0 10px;
+  text-align: center;
 }
+/*# sourceMappingURL=App.css.map */
