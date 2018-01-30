@@ -4,6 +4,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+*:hover {
+  cursor: default;
+}
+
 html {
   background-color: #26292D;
 }
@@ -48,6 +52,11 @@ html {
   background-color: #A4A2A3;
   color: black;
   border-radius: 8px;
+}
+
+#root .App .header .row .btn-container:hover,
+#root .App .header .row .btn-container span:hover {
+  cursor: pointer;
 }
 
 #root .App .header .row .btn-container.active {

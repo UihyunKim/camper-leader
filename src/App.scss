@@ -16,6 +16,11 @@ $light-grey: #D1D1D1;
     box-sizing: border-box;
     font-family: $main-font;
 }
+
+*:hover {
+    cursor: default;
+}
+
 html {
     background-color: $black;
 }
@@ -60,6 +65,11 @@ html {
                     background-color: $shady-lady;
                     color: black;
                     border-radius: 8px;
+                }
+
+                .btn-container:hover,
+                .btn-container span:hover {
+                    cursor: pointer;
                 }
 
                 .btn-container.active {
